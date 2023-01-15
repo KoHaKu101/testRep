@@ -7,5 +7,5 @@ urlpatterns = [
     path('firstWeb', views.firstWeb, name="firstWeb"),
     path('secondpage', views.secondpage, name="secondpage"),
     path('thridpage', views.thridpage, name="thridpage"),
-
+    path('HappyNewYear', views.Hny, name="Hny"),
 ]
