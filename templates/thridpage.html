@@ -4,44 +4,88 @@
 
 <div class="bg-light text-primary">
     <h1 class="bg-danger text-info"> Welcome to Thrid Page  </h1>
-    <h2 class="text-danger">My First Love   </h2>
+    <h2 class="text-danger">My Favorite Song</h2>
     <table class="table table-warning">
         <tr>
-            <td><img src="{% static 'images/p2.png' %}"width="200px"height="200px"></td>
-            <td><img src="{% static 'images/p2.png' %}"width="200px"height="200px"></td>
-            <td><img src="{% static 'images/p2.png' %}"width="200px"height="200px"></td>
-            <td><img src="{% static 'images/p2.png' %}"width="200px"height="200px"></td>
+            <td><img src="{% static 'images/music1.jpg' %}"width="200px"height="200px"></td>
+            <td><img src="{% static 'images/music2.jpg' %}"width="200px"height="200px"></td>
+            <td><img src="{% static 'images/music3.jpg' %}"width="200px"height="200px"></td>
+            <td><img src="{% static 'images/music4.jpg' %}"width="200px"height="200px"></td>
         </tr>
     </table>
 
 </div>
-
-    <p class="bg-white text-warning text-center ">
-          SAWATDEE JAAAA
+    <p class="bg-white text-dark text-center ">
+        I am very, very crazy, very <br>
+        永遠に止まらない <br>
+        世界の全て この口腔の中 <br>
+        (1, 2, 3, 4) <br>
+        さあいざ 闇の中で晩餐会を <br>
+        誰も彼も食糧へと <br>
+        Can't stop, can't stop, eating <br>
+        Can't stop, can't stop, not enough <br>
+        Anything can be eaten, even if you say no, hahaha <br>
+        いのち尽くしフルコースを <br>
+        味覚に暴力快楽を <br>
+        Don't stop, don't stop, eating <br>
+        Don't stop, don't stop, one more bite <br>
+        嗚呼 足りない 飽きない 原罪の衝動よ <br>
+        I am very, very crazy, very <br>
+        永遠に止まらない <br>
+        欲に喰われた亡者の業 I wanna go <br>
+        Very, very tasty, very<br>
+        盛大に宴を<br>
+        世界の全て この口腔の中<br>
+        I just want to eat, how tasty it is<br>
+        (1, 2, 3, 4)<br>
+        何もかにもをこの俎上へと<br>
+        理性さえも捕食対象<br>
+        Can't stop, can't stop, eating<br>
+        Can't stop, can't stop, lost myself<br>
+        許されない 止まない 本能の罪状<br>
+        You're berry, berry, like a berry<br>
+        熟れた紅い粒の様に<br>
+        噛み割れ垂れる生命の sauce I'm also<br>
+        Berry, berry, we're berries<br>
+        群小な者達よ<br>
+        跡形もなく潰され消えゆけ<br>
+        I just want to eat, how tasty it is<br>
+        罪と呼ぶなら良いでしょう<br>
+        恥と呼ぶのも良いでしょう<br>
+        欲望は本能 醜悪を肯定せよ<br>
+        I am very, very hungry, very<br>
+        永遠に止まらない<br>
+        欲に喰われた亡者の業 I wanna go<br>
+        Very, very tasty, very<br>
+        盛大に宴を<br>
+        世界の全て この口腔の中<br>
+        I am very, very hungry, very<br>
+        Very, very tasty, very<br>
+        I am very, very hungry, very<br>
+        Very, very tasty, very<br>
+        I am very, very hungry, very<br>
+        Very, very tasty, very<br>
+        I am very, very hungry, very<br>
+        Very, very tasty, very<br>
+        I am very, very hungry, very<br>
+        Very, very tasty, very<br>
     </p><br>
-    <img src="{% static 'images/p1.png'%}" width="500" height="200"
-         class='img-thumbnail'><br>
-     Other :
-    <ul type="square">
-        <li> ul1 </li>
-        <li> ul2 </li>
-        <li> A3 </li>
-        <li> A4 </li>
-    </ul>
 <br>
-    Other :
-    <ol type="i">
-        <li> olก </li>
-        <li> olข </li>
-        <li> olค </li>
-        <li> olง </li>
-    </ol>
-<br>
-    <a href="/ProfileApp/firstweb">Go to  (1) First Web</a> <br>
-    <a href="/ProfileApp/secondpage">Go to  (2) Second Page</a> <br>
-    <a href="http://www.google.com" target="_blank">
-        <img src="{% static 'images/p.2.png' %}" width="150px" height="50px"> <br>
-    </a>
+    <div class="row mb-5">
+        <div class="col-md-12">
+            <a href="{% url 'secondpage' %}" class="btn btn-warning float-start ">Go to  First Web</a>
+            <a href="{% url 'Hny' %}" class="btn btn-warning float-end ">Go to Happy New Year</a>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-md-2 bg-white mb-2 mx-2">
+             <a href="http://www.google.com" target="_blank" >
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"class="my-2" width="150px" height="50px">
+            </a>
+        </div>
+
+    </div>
+
 
 {% endblock %}
 
