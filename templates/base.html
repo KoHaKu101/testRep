@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+{% load fontawesome_6 %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thrid Page</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'stylesheets/bootstrap-5.2.3-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/sweetalert2/dist/sweetalert2.css' %}">
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 text-bg-warning">
+            {% include 'header.html' %}
+            <h1 class="text-white Text-Center">Pichitchai Thammachai</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 bg-info text-dark">
+            {% include 'menu.html' %}
+        </div>
+        <div class="col-9 bg-secondary text-primary">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+
+</div>
+
+<script src="{% static 'stylesheets/sweetalert2/dist/sweetalert2.all.min.js' %}"></script>
+<script src="{% static 'stylesheets/bootstrap-5.2.3-dist/js/bootstrap.js' %}"></script>
+{% block Java %}
+{% endblock %}
+</body>
+</html>
